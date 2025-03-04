@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=eSejmData'
+      - 'POSTGRES_PASSWORD=netlab'
+      - 'POSTGRES_USER=postgres'
+    container_name: 'database'
+    ports:
+      - '5432:5432'
+    networks:
+      - esejm-network
+
+  mail-dev:
+    container_name: mail-dev
+    image: maildev/maildev
+    ports:
+      - 1080:1080
+      - 1025:1025
+    networks:
+      - esejm-network
+
+networks:
+  esejm-network:
+    driver: bridge
