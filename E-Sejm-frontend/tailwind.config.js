@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lineColor: '#102639',
+      },
+      backgroundImage: {
+          'mp_activity_background': "url('/src/assets/mp_activity_background.png')",
+      }
+    },
   },
   plugins: [],
 }

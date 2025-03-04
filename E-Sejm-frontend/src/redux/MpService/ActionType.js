@@ -1,0 +1,5 @@
+export const GET_ALL_MPS_REQUEST = 'GET_ALL_MPS_REQUEST';
+export const GET_ALL_MPS_ERROR = 'GET_ALL_MPS_ERROR';
+
+export const GET_MP_REQUEST = 'GET_MP_REQUEST';
+export const GET_MP_ERROR = 'GET_MP_ERROR';
